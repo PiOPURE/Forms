@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <style>
+
+        * {
+                margin: 0;
+                padding: 0 auto;
+                box-sizing: border-box;
+                margin: 10px;
+                font-family: Arial, sans-serif;
+        }
+
+        .container {
+                display: flex;
+                flex-wrap: wrap;
+                column-count: 2;
+        }
+
+        .column {
+                flex: 50%;
+                padding: 10px;
+        }
+
+        .form-group {
+                margin-bottom: 15px;
+        }
+
+        .form-group label {
+                display: block;
+                margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+                width: 100%;
+                padding: 8px;
+                border-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .button {
+            width: 520px; background-color:blue; 
+            color:white;
+        }
+
+        .PhoneNo {
+            display: flex;
+            align-items: center;
+            width: 577px;
+        }
+
+        .c-code {
+                padding: 10px;
+                border: 1px thin black;
+                border-right: none;
+                border-radius: 4px  0 0 4px;
+                margin: 10px -5px 10px 10px;
+        }
+
+        .P_No. {
+                height: 10;
+                 
+                border: 4px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <h1>Assignments on Forms</h1>
+    <h2>First Form:</h2>
+
+    <form action="" method="">
+
+ <div class="container">
+     <div class="column">
+
+     <div class="form-group">   
+        <!-------------NAME---------------------->
+        <label for="fname">First Name:</label>
+        <input type="text" name="First Name" id="fname" size="20%" placeholder="your name" required>
+     </div>
+     <div class="form-group">
+        <label style="margin-bottom: 100px;" for="Lname">Last Name:</label>
+        <input type="text" name="Last Name" id="Lname" size="20%" placeholder="your father's name" required>
+     </div>
+        <!-----------------EMAIL--------------------->
+     <div class="form-group">
+        <label for="mail">Email:</label><br>
+        <input type="email" name="Email" id="mail" size="72" placeholder="you@company.com" required>
+     </div>
+        <!-----------------PHONE NUMBER--------------->
+     <div class="form-group">
+        <label for="P_No.">Phone Number:</label><br>
+        <div class="PhoneNo">
+        <select class="c-code" name="country">
+            <option value="NIGERIA">NIG</option>
+            <option value="UNITED STATE OF AMERICA">US</option>
+            <option value="LONDON">UK</option>
+            <option value="CHINA">CHN</option>
+        </select>
+        <input type="tel" name="Phone Number" id="P_No." size="60" placeholder="+123..." required>
+        </div>
+     </div>
+        <!-----------------MESSAGE-------------------->
+     <div class="form-group">
+        <label for="mssg">Message:</label><br>
+        <textarea rows="5" cols="67" id="mssg" placeholder="Leave us a message..."></textarea>
+     </div>
+        <!-----------------SERVICES------------------->
+        <h4 >Services</h4>
+     <div class="form-group">
+        <input type="checkbox" name="Website design" checked="checked"> Website design <br>
+     </div>
+     <div class="form-group">
+        <input type="checkbox" name="Content creation"> Content creation <br>
+     </div>
+     <div class="form-group">
+        <input type="checkbox" name="UX design"> UX design
+     </div>
+     <div class="form-group"> 
+        <input type="checkbox" name="Strategy & consulting"> Strategy & consulting <br>
+     </div>
+     <div class="form-group">
+        <input type="checkbox" name="User research"> User research
+     </div>
+     <div class="form-group">
+        <input type="checkbox" name="Other"> Other
+     </div>
+        <!----------------FIRST BUTTON-------------------->
+     <div class="form-group">
+        <button class="button">Send message</button>
+     </div>
+</div>
+
+<!-- <div class="container"> -->
+        <!-----------------SECOND COLUMN------------------>
+        <h4> Chat with us </h4>
+        <p>Speak to our friendly team via chat:</p>
+
+<div class="column">
+
+     <div class="form-group">
+        <a href="">Start a live chat</a>
+     </div>
+     <div class="form-group">
+        <a href="">Shoot us an email</a>
+     </div>
+     <div class="form-group">
+        <a href="">Message us on X</a>
+     </div>
+
+
+        <h4> Call Us </h4>
+        <p>Call our team Mon-Fri from 8am to 5pm.</p>
+
+     <div class="form-group">
+        <a href="" placeholder="+(555) 000-0000"></a>
+     </div>
+
+
+        <h4>Visit Us</h4>
+        <p>Chat to us in person at our Melbourne HQ.</p>
+
+     <div class="form-group">
+        <a href="">100 Smith Street, Collingnwood VIC 306</a>
+     </div>
+</div>
+        <!-------------END OF CHAT WITH US--------------->
+</div>
+    </form>
+
+</body>
+</html>
